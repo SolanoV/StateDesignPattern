@@ -13,7 +13,7 @@ A vending machine needs to manage different states, including "Idle", "ItemSelec
    - Automatically transition back to the "Idle" state after dispensing is complete.
 4. **OutOfOrder State:**
    - Disallow all operations.
----
+
 ## **Current System** 
 The system currently relies on conditional statements within the VendingMachine class to check the machine state and determine valid actions. This approach becomes cumbersome and error-prone as the number of states and their associated logic grows.
 
@@ -29,3 +29,6 @@ The system currently relies on conditional statements within the VendingMachine 
    - Remove state-specific logic from the VendingMachine class.
    - Introduce a reference to the current VendingMachineState object.
    - Delegate actions like selectItem, insertCoin, dispenseItem, and setOutOfOrder to the current state object through its corresponding methods.
+
+## UML Class Diagram
+![]()
